@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Contacto</title>
+
+  <!--  Estilos  -->
+  <link href="css/Estilos.css" rel="stylesheet"> 
+
+  <!-- Estilos template -->
+  <link href="css/Estilos_1.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+       <img class="Logo" src="img/Logo.jpg" alt="">
+      <style>
+      .Logo{
+        width: 50px; height: 50px;
+      }
+      </style>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Descripcion.html">Personal</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contacto</a>
+          </li>
+    </div>
+  </nav>
+
+  
+  <div class="container">
+
+    <!-- Sub Menu -->
+    <h1 class="mt-4 mb-3">Contacto
+      <small></small>
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Inicio</a>
+      </li>
+      <li class="breadcrumb-item active">Contacto</li>
+    </ol>
+
+    <!-- Contenedor -->
+    <div class="row">
+      <!-- Mapa Contenedor-->
+      <div class="col-lg-8 mb-4">
+        <!-- API de Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35510.01719407844!2d-88.22162928320483!3d20.68866062508229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f510ada7bbef3f7%3A0xed7a1f8fe539aa31!2sValladolid%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1587408073701!5m2!1ses-419!2smx" width="700" height="210" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <!-- Detalles de contacto -->
+      <div class="col-lg-4 mb-4">
+        <h3>Detalles de Contacto</h3>
+        <p>
+          Valladolid Yucatan
+          <br>Colonia Centro
+          <br>
+        </p>
+        <p>
+          <abbr title="Telefono">Telefono</abbr>: (985) 456-1243
+        </p>
+        <p>
+          <abbr title="Email">Email</abbr>:
+          <a href="Ejemplo@gmail.com">geralt_de_rivia@hotmail.com
+          </a>
+        </p>
+        <p>
+          <abbr title="Hours">Horario</abbr>: Lunes a Sabado: 9:00 AM a 5:00 PM
+        </p>
+      </div>
+    </div>
+    
+
+    <!-- formulario -->
+    
+        <div class="row">
+      <div class="col-lg-8 mb-4">
+        <h3>Comunicate con Nosotros</h3>
+        <form name="sentMessage" id="contactForm" method="POST" action="Contacto.php" novalidate>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Nombre Completo:</label>
+              <input type="text" class="form-control"  name="name" id="name" required data-validation-required-message="Favor de ingresar su nombre.">
+              <p class="help-block"></p>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Numero Telefonico:</label>
+              <input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Favor de ingresar su Telefono.">
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Direccion de Correo Electronico:</label>
+              <input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Favor de ingresar su Email">
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Mensage:</label>
+              <textarea rows="10" cols="100" class="form-control" name="message" id="message" required data-validation-required-message="Favor de ingresar su Mensaje" maxlength="999" style="resize:none"></textarea>
+            </div>
+          </div>
+          <div id="success"></div>
+          
+          <button type="submit" value="ENVIAR" class="btn btn-primary" name="sendMessageButton" id="sendMessageButton">Enviar Mensaje</button>
+        </form>
+      </div>
+
+    </div>
+    
+
+  </div>
+  
+
+  <!-- Derechos Reservados-->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Derechos reservados al Equipo Dinamita 2020</p>
+    </div>
+    
+  </footer>
+
+  <script src="js/js.js"></script>
+  <script src="js/js_1.js"></script>
+
+  <!-- Validacion de Datos-->
+
+  <script src="js/Validacion.js"></script>
+  <script src="js/Contacto.js"></script>
+  
+   <script type='text/javascript'>
+    $(function(){
+        $(document).bind("contextmenu",function(e){
+            return false;
+        });
+    });
+    </script>
+
+</body>
+
+</html>
